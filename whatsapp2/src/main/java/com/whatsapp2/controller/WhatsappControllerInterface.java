@@ -5,13 +5,13 @@ import com.whatsapp2.entity.WhatsappUserDetails;
 public interface WhatsappControllerInterface {
 	//int createProfile();
 
-	void viewAllProfile();
+	int viewAllProfile();
 
-	void viewProfile();
+	int viewProfile();
 
-	void deleteProfile();
+	int deleteProfile();
 
-	void editProfile();
+	int editProfile();
 
 	int signUp();
 
@@ -19,7 +19,7 @@ public interface WhatsappControllerInterface {
 
 	int timeline();
 
-	void searchProfile();
+	int searchProfile();
 
 	
 

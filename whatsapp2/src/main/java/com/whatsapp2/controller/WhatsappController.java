@@ -68,7 +68,7 @@ public class WhatsappController implements WhatsappControllerInterface {
 		return i;
 	}*/
 
-	public void viewAllProfile() {
+	public int viewAllProfile() {
 		
 		/*
 		 Function-Name 	: viewprofile
@@ -101,11 +101,12 @@ public class WhatsappController implements WhatsappControllerInterface {
 			
 		}*/
 		//System.out.println("after sorting");
+		return i;
 		
 		//Collections.sort(l1, new SortByFirstName());
 	}
 
-	public void viewProfile() {
+	public int viewProfile() {
 		
 		/*
 		 Function-Name 	: viewprofile
@@ -137,11 +138,12 @@ public class WhatsappController implements WhatsappControllerInterface {
 		else {
 			System.out.println("Profile not found");
 		}
+		return i;
 		
 		
 	}
 
-	public void deleteProfile() {
+	public int deleteProfile() {
 		
 		/*
 		 Function-Name 		: createProfile
@@ -169,9 +171,10 @@ public class WhatsappController implements WhatsappControllerInterface {
 		else {
 			System.out.println("profile not deleted");
 		}
+		return i;
 	}
 
-	public void editProfile() {
+	public int editProfile() {
 		
 		/*
 		 Function-Name 		: editProfile
@@ -252,7 +255,8 @@ public class WhatsappController implements WhatsappControllerInterface {
 				 }
 		else {
 			System.out.println("Profile not found");
-		}	
+		}
+		return i;	
 	}
 
 
@@ -366,7 +370,7 @@ public class WhatsappController implements WhatsappControllerInterface {
 
 
 	@Override
-	public void searchProfile() {
+	public int searchProfile() {
 		System.out.println("Enter first name");
 		String firstname = sc.next();
 		
@@ -382,6 +386,7 @@ public class WhatsappController implements WhatsappControllerInterface {
 			System.out.println("Password is "+i.getEmail());
 			
 			});
+		return i;
 		
 	}
 
